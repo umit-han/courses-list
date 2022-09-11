@@ -1,0 +1,30 @@
+.input {
+    padding: 5px 10px;
+    width: 100%;
+    height: 44px;
+    border-radius: 5px;
+    color: $color-text;
+    font-size: $fs-lg;
+    border: none;
+    background-color: $color-base-3;
+    transition: all 0.2s linear;
+
+    &:focus,
+    &:active {
+        border: none;
+        outline: none;
+        background-color: rgba($color-base-3, 0.1);
+        transform: translateY(-3px);
+    }
+
+    &::placeholder {
+        color: rgba($color-text, 0.3);
+    }
+
+    &__search {
+        position: absolute;
+        top: -64px;
+        left: 0;
+    }
+
+}

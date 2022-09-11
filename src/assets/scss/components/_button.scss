@@ -1,0 +1,31 @@
+.btn {
+    padding: 8px 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 100px;
+    font-weight: 600;
+    color: $color-base-1;
+    font-size: $fs-md;
+
+    &:focus,
+    &:active {
+        transform: scale(0.98);
+    }
+
+    &--primary {
+        background-color: $color-primary;
+
+        &:hover {
+            filter: brightness(1.10)
+        }
+    }
+
+
+    &--secondary {
+        background-color: $color-secondary;
+
+        &:hover {
+            filter: brightness(1.10)
+        }
+    }
+}

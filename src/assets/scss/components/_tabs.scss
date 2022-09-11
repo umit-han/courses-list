@@ -1,0 +1,46 @@
+.tab {
+    @include border-top;
+
+    @include media991 {
+        font-size: 14px;
+    }
+
+    &__header {
+        width: 100%;
+        display: flex;
+        background: $color-bg-primary;
+        border-radius: 5px;
+    }
+
+    &__btn {
+        width: 100%;
+        text-align: center;
+        font-size: $fs-lg;
+        font-weight: 600;
+        color: $color-base-1;
+        cursor: pointer;
+        padding: 10px;
+        background: $color-bg-primary;
+        border-radius: 5px;
+
+        &:hover {
+            filter: brightness(1.05);
+        }
+
+        &:active,
+        &:focus {
+            filter: brightness(1.15);
+        }
+
+        &.active {
+            filter: brightness(1.50);
+        }
+    }
+
+    &__content {
+        background-color: transparent;
+        padding: 0px;
+        @include border-bottom;
+        position: relative;
+    }
+}

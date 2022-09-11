@@ -1,0 +1,38 @@
+.card {
+    background-color: $color-base-3;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+    box-shadow: $box-shadow;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.01);
+        transition: all 0.3s ease-out;
+    }
+
+    &__img {
+        width: 100%;
+        object-fit: cover;
+        aspect-ratio: 2/1;
+        @include border-top;
+    }
+
+    &__info {
+        padding: 10px;
+    }
+
+    &__title {
+        font-size: $fs-lg;
+        color: $color-text;
+        margin-bottom: 8px;
+        font-weight: 600;
+    }
+
+    &__description {
+        font-size: $fs-md;
+        color: $color-secondary;
+        margin-bottom: 8px;
+    }
+}
